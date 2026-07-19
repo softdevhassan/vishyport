@@ -1,0 +1,17 @@
+<header class="fixed top-0 inset-x-0 z-50 transition-all duration-300" :class="{ 'py-4': !scrolled, 'py-2 bg-white/80 backdrop-blur-md shadow-sm': scrolled }">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="flex items-center justify-between border border-gray-200 bg-white shadow-sm rounded-full px-6 py-3">
+            <a href="{{ url_for('main.index') }}" class="text-xl font-serif font-bold text-slate-800 tracking-tight hover:text-brand transition-colors">
+                Warisha Faiz.
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="{{ url_for('main.about') }}" class="text-sm font-medium text-slate-600 hover:text-brand transition-colors">About</a>
+                <a href="{{ url_for('main.services') }}" class="text-sm font-medium text-slate-600 hover:text-brand transition-colors">Academics</a>
+                <a href="{{ url_for('main.portfolio') }}" class="text-sm font-medium text-slate-600 hover:text-brand transition-colors">Projects</a>
+                <a href="{{ url_for('main.contact') }}" class="px-4 py-2 rounded-full bg-brand/10 text-brand text-sm font-semibold hover:bg-brand hover:text-white transition-colors">Contact</a>
+            </nav>
+        </div>
+    </div>
+</header>

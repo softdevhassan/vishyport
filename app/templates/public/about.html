@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}About | {{ settings.name }}{% endblock %}
+
+{% block content %}
+<section class="space-y-16 pt-12">
+    <!-- Header -->
+    <div class="text-center space-y-6">
+        <h1 class="text-5xl font-serif font-bold text-slate-800">About Warisha</h1>
+        <div class="w-16 h-1 bg-brand mx-auto rounded-full"></div>
+        <p class="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
+            I am currently in my 3rd semester of a BS in Computer Science, enthusiastically learning core programming languages and building foundational academic projects.
+        </p>
+    </div>
+
+    <!-- Summary Details -->
+    <div class="max-w-3xl mx-auto">
+        <div class="p-10 bg-white border border-gray-100 rounded-3xl shadow-xl shadow-slate-200/50 space-y-6 text-slate-600 leading-loose text-lg">
+            <p>As a 3rd-semester Computer Science student at Punjab Group of Colleges, my journey into software development is just beginning, but my passion for learning is immense.</p>
+            <p>My current academic focus revolves around mastering core programming principles. I have been deeply engaged in learning languages like <strong class="text-slate-800">C, C++, Python, and Assembly</strong>, which are helping me understand how software interacts with hardware and how to write efficient logic.</p>
+            <p>On the web development side, I am exploring the foundational technologies of the web—<strong class="text-slate-800">HTML, CSS, JavaScript, and PHP</strong>—to bridge the gap between backend logic and beautiful user interfaces. I am actively looking for opportunities to collaborate, learn from experienced developers, and apply my academic knowledge to real-world projects.</p>
+        </div>
+    </div>
+
+    <!-- Education Timeline -->
+    <div class="max-w-3xl mx-auto pt-16 space-y-12">
+        <h2 class="text-3xl font-serif font-bold text-slate-800 text-center">Education</h2>
+        
+        <div class="relative border-l-2 border-brand/20 ml-4 md:ml-0 md:border-l-0">
+            <!-- Central Line for Desktop -->
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-brand/20 -translate-x-1/2"></div>
+            
+            <div class="space-y-12 relative">
+                <!-- Item 1 -->
+                <div class="md:flex items-center justify-between">
+                    <div class="md:w-5/12 text-left md:text-right pl-8 md:pl-0 pr-0 md:pr-8">
+                        <h3 class="text-xl font-bold text-slate-800">BS Computer Science</h3>
+                        <p class="text-brand font-medium">Punjab Group of Colleges</p>
+                        <p class="text-sm text-slate-500 mt-2">Currently in my 3rd semester.</p>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-brand ring-4 ring-white -translate-x-[9px] md:-translate-x-1/2 mt-1.5 md:mt-0"></div>
+                    <div class="hidden md:block md:w-5/12 text-slate-400 text-sm pl-8">
+                        Present
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="md:flex items-center justify-between">
+                    <div class="hidden md:block md:w-5/12 text-slate-400 text-sm pr-8 text-right">
+                        Completed
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-slate-300 ring-4 ring-white -translate-x-[9px] md:-translate-x-1/2 mt-1.5 md:mt-0"></div>
+                    <div class="md:w-5/12 pl-8">
+                        <h3 class="text-xl font-bold text-slate-800">Pre-University Education</h3>
+                        <p class="text-slate-600 font-medium">Punjab Group of Colleges</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

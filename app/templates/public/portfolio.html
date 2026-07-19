@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio | {{ settings.name }}{% endblock %}
+
+{% block content %}
+<section class="space-y-12 pt-12">
+    <div class="text-center space-y-6">
+        <h1 class="text-5xl font-serif font-bold text-slate-800">Academic Portfolio</h1>
+        <div class="w-16 h-1 bg-brand mx-auto rounded-full"></div>
+        <p class="text-slate-600 max-w-2xl mx-auto text-lg">
+            A collection of assignments, semester projects, and foundational academic work.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+        {% for project in projects %}
+        <div class="p-8 rounded-3xl bg-white border border-gray-100 shadow-xl shadow-slate-200/50 hover:-translate-y-1 transition-transform group flex flex-col h-full">
+            <h3 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-brand transition-colors">{{ project.title }}</h3>
+            <p class="text-slate-600 mb-6 flex-1">{{ project.description }}</p>
+            
+            <div class="flex flex-wrap gap-2 mb-8">
+                {% for tech in project.stack.split(',') %}
+                <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-gray-200 text-xs font-medium text-slate-700">{{ tech.strip() }}</span>
+                {% endfor %}
+            </div>
+            
+            <div class="mt-auto pt-6 border-t border-gray-100">
+                {% if project.live_url %}
+                <a href="{{ project.live_url }}" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-teal-800 transition-colors">
+                    View Project 
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                {% else %}
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-slate-400">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    University Project / Local
+                </span>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

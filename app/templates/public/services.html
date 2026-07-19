@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Academics | {{ settings.name }}{% endblock %}
+
+{% block content %}
+<section class="space-y-16 pt-12">
+    <div class="text-center space-y-6">
+        <h1 class="text-5xl font-serif font-bold text-slate-800">Academics & Skills</h1>
+        <div class="w-16 h-1 bg-brand mx-auto rounded-full"></div>
+        <p class="text-slate-600 max-w-2xl mx-auto text-lg">
+            The programming languages and concepts I am currently mastering in my degree.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Core Studies -->
+        <div class="p-8 rounded-3xl bg-white border border-gray-100 shadow-xl shadow-slate-200/50">
+            <div class="w-12 h-12 rounded-full bg-brand/10 text-brand flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-6">Programming Fundamentals</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">C Language</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">C++</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">Python</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">Assembly</span>
+            </div>
+        </div>
+
+        <!-- Web Basics -->
+        <div class="p-8 rounded-3xl bg-white border border-gray-100 shadow-xl shadow-slate-200/50">
+            <div class="w-12 h-12 rounded-full bg-brand/10 text-brand flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-6">Web Technologies</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">HTML5</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">CSS3</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">JavaScript</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">PHP</span>
+            </div>
+        </div>
+
+        <!-- Concepts -->
+        <div class="p-8 rounded-3xl bg-white border border-gray-100 shadow-xl shadow-slate-200/50">
+            <div class="w-12 h-12 rounded-full bg-brand/10 text-brand flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-6">Key Concepts</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">OOP</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">Data Structures</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">Algorithms</span>
+                <span class="px-4 py-2 rounded-full bg-slate-50 border border-gray-200 text-sm font-medium text-slate-700">Logic Design</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
