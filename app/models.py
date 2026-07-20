@@ -15,7 +15,7 @@ class SiteSettings(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), default='Warisha Faiz')
     role = db.Column(db.String(100), default='Computer Science Student')
-    location = db.Column(db.String(100), default='Punjab Group of Colleges')
+    location = db.Column(db.String(100), default='ILM College')
     about_text = db.Column(db.Text, default='A passionate 3rd-semester Computer Science student learning core programming concepts and exploring software development.')
     email = db.Column(db.String(120), default='warisha@placeholder.com')
     github_url = db.Column(db.String(200), default='')

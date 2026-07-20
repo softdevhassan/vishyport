@@ -1,7 +1,7 @@
 # Academic Portfolio - Warisha Faiz
 
 ## 1. Planning
-**Objective:** To design and develop a clean, academic portfolio to showcase my journey as a 3rd-semester BS Computer Science student at Punjab Group of Colleges.
+**Objective:** To design and develop a clean, academic portfolio to showcase my journey as a 3rd-semester BS Computer Science student at ILM College.
 **Target Audience:** Professors, academic peers, and potential internship recruiters.
 **Architecture Design:**
 - **Framework:** Python Flask (utilizing MVC-like patterns).

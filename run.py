@@ -19,7 +19,7 @@ def init_db():
             settings = SiteSettings(
                 name="Warisha Faiz",
                 role="Computer Science Student",
-                location="Punjab Group of Colleges",
+                location="ILM College",
                 about_text="A passionate 3rd-semester Computer Science student learning core programming concepts and exploring software development.",
                 email="warisha@placeholder.com",
                 github_url="",
