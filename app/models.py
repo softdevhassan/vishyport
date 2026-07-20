@@ -9,7 +9,7 @@ class SiteSettings(db.Model):
     email = db.Column(db.String(120), default='warisha@placeholder.com')
     github_url = db.Column(db.String(200), default='')
     linkedin_url = db.Column(db.String(200), default='')
-    whatsapp = db.Column(db.String(20), default='923277133082')
+    whatsapp = db.Column(db.String(20), default='+923000000000')
 
 class Project(db.Model):
     id = db.Column(db.Integer, primary_key=True)
